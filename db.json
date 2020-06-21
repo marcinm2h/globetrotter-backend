@@ -1,8 +1,76 @@
 {
-  "users": [
+  "places": [
     {
-      "id": 1,
-      "name": "Marcin"
+      "id": "idtgkKgGSH",
+      "ownerId": "FWYShWqidtgkKgGSHgFIfvWuD6r1",
+      "title": "Moje miejsce 1",
+      "description": "Moje miejsce numer jeden to miejsce na mapie.",
+      "radius": 5,
+      "photo": null
+    },
+    {
+      "id": "hWqidt",
+      "ownerId": "FWYShWqidtgkKgGSHgFIfvWuD6r1",
+      "title": "Moje miejsce 2",
+      "description": "Moje miejsce numer dwa to miejsce na mapie.",
+      "radius": 2,
+      "photo": null
+    },
+    {
+      "id": "4792bf5f",
+      "ownerId": "FWYShWqidtgkKgGSHgFIfvWuD6r1",
+      "title": "Kolejne miejsce",
+      "description": "Opis miejsca",
+      "radius": 100,
+      "photo": null
+    },
+    {
+      "id": "91fb7125",
+      "ownerId": "FWYShWqidtgkKgGSHgFIfvWuD6r1",
+      "title": "Kolejne miejsce",
+      "description": "Opis miejsca",
+      "radius": 100,
+      "photo": null
+    },
+    {
+      "id": "4ea526c7",
+      "ownerId": "FWYShWqidtgkKgGSHgFIfvWuD6r1",
+      "title": "Kolejne miejsce",
+      "description": "Opis miejsca",
+      "radius": 100,
+      "photo": null
+    },
+    {
+      "id": "cd1e903f",
+      "ownerId": "FWYShWqidtgkKgGSHgFIfvWuD6r1",
+      "title": "Kolejne miejsce",
+      "description": "Opis miejsca",
+      "radius": 100,
+      "photo": null
+    },
+    {
+      "id": "3b44a3a3",
+      "ownerId": "FWYShWqidtgkKgGSHgFIfvWuD6r1",
+      "title": "Kolejne miejsce",
+      "description": "Opis miejsca",
+      "radius": 100,
+      "photo": null
+    },
+    {
+      "id": "7e0b37ab",
+      "ownerId": "FWYShWqidtgkKgGSHgFIfvWuD6r1",
+      "title": "Kolejne miejsce",
+      "description": "Opis miejsca",
+      "radius": 100,
+      "photo": null
+    },
+    {
+      "id": "b6413c3d",
+      "ownerId": "FdddddddddWYShWqidtgkKgGSHgFIfvWuD6r1",
+      "title": "Kolejne miejsce",
+      "description": "Opis miejsca",
+      "radius": 100,
+      "photo": null
     }
   ]
 }

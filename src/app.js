@@ -2,9 +2,22 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const low = require("lowdb");
 const FileAsync = require("lowdb/adapters/FileAsync");
+const MESSAGES = require("./messages.json");
 const { router } = require("./router");
-const { errorHandler } = require("./auth");
-const { validateUserId } = require("./firebase");
+
+const errorHandler = () => (err, req, res, next) => {
+  if (err.name === "UnauthorizedError") {
+    return res.send({
+      status: 401,
+      error: MESSAGES.ERRORS.UNAUTHORIZED,
+    });
+  }
+  console.log(err);
+  res.send({
+    status: 400,
+    error: err.message,
+  });
+};
 
 const logger = () => (req, res, next) => {
   console.log(`REQUEST ${req.path} (${req.method})`, [

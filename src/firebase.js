@@ -1,8 +1,10 @@
 const firebaseAdmin = require("firebase-admin");
+const FIREBASE_DATABASE_URL =
+  process.env.FIREBASE_DATABASE_URL || "https://prm02-ac0cf.firebaseio.com";
 
 const firebaseAdminApp = firebaseAdmin.initializeApp({
   credential: firebaseAdmin.credential.applicationDefault(),
-  databaseURL: "https://prm02-ac0cf.firebaseio.com",
+  databaseURL: FIREBASE_DATABASE_URL,
 });
 
 const validateUserId = (userId) => {
