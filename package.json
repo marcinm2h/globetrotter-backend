@@ -9,5 +9,12 @@
     "express-jwt": "^5.3.3",
     "jsonwebtoken": "^8.5.1",
     "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "npx nodemon start ./src/app.js"
   }
 }

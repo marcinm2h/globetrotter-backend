@@ -1,0 +1,6 @@
+{
+  "ERRORS": {
+    "DEFAULT": "Wystąpił błąd aplikacji.",
+    "UNAUTHORIZED": "Nie masz uprawnień do przeglądania tego zasobu. Zaloguj się i spróbuj ponownie."
+  }
+}
