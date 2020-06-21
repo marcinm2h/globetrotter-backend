@@ -1,3 +1,4 @@
+const pick = require("lodash/pick");
 const uuidv4 = require("uuid").v4;
 
 const uuid = () => uuidv4().substr(0, 8);

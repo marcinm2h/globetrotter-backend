@@ -1,4 +1,3 @@
-const pick = require("lodash/pick");
 const { Router } = require("express");
 const { validateUserId } = require("./firebase");
 const { auth, createToken } = require("./auth");
