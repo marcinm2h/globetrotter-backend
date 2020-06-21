@@ -4,6 +4,7 @@ const low = require("lowdb");
 const FileAsync = require("lowdb/adapters/FileAsync");
 const { router } = require("./router");
 const { errorHandler } = require("./auth");
+const { validateUserId } = require("./firebase");
 
 const logger = () => (req, res, next) => {
   console.log(`REQUEST ${req.path} (${req.method})`, [
