@@ -1,7 +1,6 @@
 const { Router } = require("express");
-const { validateUserId } = require("./firebase");
-const { auth, createToken } = require("./auth");
-const { Place } = require('./models');
+const { auth, createToken, validateUserId } = require("./auth");
+const { Place } = require("./models");
 const MESSAGES = require("./messages.json");
 
 const router = (db) => {

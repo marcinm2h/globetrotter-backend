@@ -1,5 +1,6 @@
 const expressJwt = require("express-jwt");
 const jwt = require("jsonwebtoken");
+const { validateUserId } = require("./firebase");
 
 const JWT_SECRET = process.env.JWT_SECRET || "secret";
 const JWT_EXPIRATION_TIME_IN_SECONDS = 60 * 1;
@@ -15,8 +16,8 @@ const createToken = (data) =>
     expiresIn: JWT_EXPIRATION_TIME_IN_SECONDS,
   });
 
-
 module.exports = {
   auth,
   createToken,
+  validateUserId,
 };
