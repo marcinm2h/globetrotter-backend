@@ -19,12 +19,8 @@ const errorHandler = () => (err, req, res, next) => {
 
 const logger = () => (req, res, next) => {
   console.log(
-    `REQUEST ${req.path} (${req.method}) ${JSON.stringify(
-      { body: req.body, params: req.params },
-      null,
-      2
-    )}`,
-    req.get("Authorization")
+    `REQUEST ${req.path} (${req.method})`,
+    req.get("Authorization") && "[with-token]"
   );
   next();
 };

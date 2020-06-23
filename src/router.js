@@ -2,6 +2,7 @@ const { Router } = require("express");
 const { auth, createToken, validateUserId } = require("./auth");
 const { Place } = require("./models");
 const MESSAGES = require("./messages.json");
+const { map } = require("lodash");
 
 const router = (db) => {
   const router = Router();
@@ -61,6 +62,7 @@ const router = (db) => {
   router.delete("/places/:placeId", auth, (req, res) => {
     db.get("places")
       .filter((place) => place.ownerId === req.user.userId)
+      .find(x => x)
       .remove(({ id }) => id === req.params.placeId)
       .write()
       .then((place) => {
@@ -76,6 +78,7 @@ const router = (db) => {
     db.get("places")
       .filter((place) => place.ownerId === req.user.userId)
       .filter((place) => place.id === req.params.placeId)
+      .find(x => x)
       .assign(Place.parseArgs(req.body))
       .write()
       .then((place) => {

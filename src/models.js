@@ -19,6 +19,8 @@ Place.create = ({
   photo,
 });
 const allowedKeys = Object.keys(Place.create({}));
-Place.parseArgs = (args) => pick(args, allowedKeys);
+Place.parseArgs = (args) => {
+  return pick(args, allowedKeys);
+};
 
 module.exports = { Place };

@@ -2,11 +2,11 @@
   "places": [
     {
       "id": "idtgkKgGSH",
-      "ownerId": "Bdq64GukQ9aQdP1ZIlxtQzHCOiD2",
-      "title": "Moje miejsce 1",
-      "description": "Moje miejsce numer jeden to miejsce na mapie.",
-      "radius": 5,
-      "photo": null
+      "ownerId": "OXNdIql2uCNKuLmAhDq3BD6MsbG2",
+      "title": "placeholder",
+      "description": "placeholder",
+      "radius": 2,
+      "photo": "photo"
     },
     {
       "id": "hWqidt",
@@ -71,6 +71,62 @@
       "description": "Opis miejsca",
       "radius": 100,
       "photo": null
+    },
+    {
+      "id": "4652b064",
+      "ownerId": "OXNdIql2uCNKuLmAhDq3BD6MsbG2",
+      "title": "placeholder",
+      "description": "placeholder",
+      "radius": 2,
+      "photo": "photo"
+    },
+    {
+      "id": "84fa2baa",
+      "ownerId": "OXNdIql2uCNKuLmAhDq3BD6MsbG2",
+      "title": "placeholder",
+      "description": "placeholder",
+      "radius": 2,
+      "photo": "photo"
+    },
+    {
+      "id": "6d755cfa",
+      "ownerId": "OXNdIql2uCNKuLmAhDq3BD6MsbG2",
+      "title": "placeholder",
+      "description": "placeholder",
+      "radius": 2,
+      "photo": "photo"
+    },
+    {
+      "id": "f43ea217",
+      "ownerId": "OXNdIql2uCNKuLmAhDq3BD6MsbG2",
+      "title": "placeholder",
+      "description": "placeholder",
+      "radius": 2,
+      "photo": "photo"
+    },
+    {
+      "id": "8990bea6",
+      "ownerId": "OXNdIql2uCNKuLmAhDq3BD6MsbG2",
+      "title": "placeholder",
+      "description": "placeholder",
+      "radius": 2,
+      "photo": "photo"
+    },
+    {
+      "id": "7d4e965b",
+      "ownerId": "OXNdIql2uCNKuLmAhDq3BD6MsbG2",
+      "title": "placeholder",
+      "description": "placeholder",
+      "radius": 2,
+      "photo": "photo"
+    },
+    {
+      "id": "d7743544",
+      "ownerId": "OXNdIql2uCNKuLmAhDq3BD6MsbG2",
+      "title": "placeholder",
+      "description": "placeholder",
+      "radius": 2,
+      "photo": "photo"
     }
   ]
 }
