@@ -23,7 +23,6 @@ const router = (db) => {
 
       // FIXME: token in header
       res.send({
-        status: 200,
         data: {
           token,
         },
@@ -39,7 +38,6 @@ const router = (db) => {
       .value();
 
     res.send({
-      status: 200,
       data: {
         places,
       },
@@ -54,7 +52,6 @@ const router = (db) => {
         .value() || null;
 
     res.send({
-      status: 200,
       data: {
         place,
       },
@@ -68,7 +65,6 @@ const router = (db) => {
       .write()
       .then((place) => {
         res.send({
-          status: 200,
           data: {
             place,
           },
@@ -84,7 +80,6 @@ const router = (db) => {
       .write()
       .then((place) => {
         res.send({
-          status: 200,
           data: {
             place,
           },
@@ -98,7 +93,6 @@ const router = (db) => {
       .write()
       .then((places) => {
         res.send({
-          status: 200,
           data: {
             place: places[places.length - 1],
           },

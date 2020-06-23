@@ -7,22 +7,25 @@ const { router } = require("./router");
 
 const errorHandler = () => (err, req, res, next) => {
   if (err.name === "UnauthorizedError") {
-    return res.send({
-      status: 401,
+    return res.status(401).send({
       error: MESSAGES.ERRORS.UNAUTHORIZED,
     });
   }
   console.log(err);
-  res.send({
-    status: 400,
+  res.status(400).send({
     error: err.message,
   });
 };
 
 const logger = () => (req, res, next) => {
-  console.log(`REQUEST ${req.path} (${req.method})`, [
-    req.user || "NOT_LOGGED_IN",
-  ]);
+  console.log(
+    `REQUEST ${req.path} (${req.method}) ${JSON.stringify(
+      { body: req.body, params: req.params },
+      null,
+      2
+    )}`,
+    req.get("Authorization")
+  );
   next();
 };
 
