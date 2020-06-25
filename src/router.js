@@ -61,14 +61,12 @@ const router = (db) => {
 
   router.delete("/places/:placeId", auth, (req, res) => {
     db.get("places")
-      .filter((place) => place.ownerId === req.user.userId)
-      .find(x => x)
-      .remove(({ id }) => id === req.params.placeId)
+      .remove({ id: req.params.placeId })
       .write()
-      .then((place) => {
+      .then((places) => {
         res.send({
           data: {
-            place,
+            place: places[0],
           },
         });
       });
@@ -78,8 +76,8 @@ const router = (db) => {
     db.get("places")
       .filter((place) => place.ownerId === req.user.userId)
       .filter((place) => place.id === req.params.placeId)
-      .find(x => x)
-      .assign(Place.parseArgs(req.body))
+      .find((x) => x)
+      .assign({ ...Place.parseArgs(req.body), photo: req.body.photo || null })
       .write()
       .then((place) => {
         res.send({

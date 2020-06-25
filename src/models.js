@@ -10,13 +10,17 @@ Place.create = ({
   description = "",
   radius = 1,
   photo = null,
+  positionLong,
+  positionLat,
 } = {}) => ({
   id: uuid(),
   ownerId,
   title,
-  description: description.substring(0, 300),
+  description: description.substring(0, 500),
   radius,
   photo,
+  positionLong,
+  positionLat,
 });
 const allowedKeys = Object.keys(Place.create({}));
 Place.parseArgs = (args) => {
